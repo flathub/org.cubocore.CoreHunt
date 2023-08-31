@@ -8,6 +8,7 @@ finish-args:
   - --socket=fallback-x11
   - --socket=wayland
   - --filesystem=home:ro # For searching files accross the user filesystem
+  - --filesystem=xdg-config
   - --device=dri
   - --talk-name=org.freedesktop.Notifications
 cleanup:
@@ -28,7 +29,7 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/cubocore/libcprime.git
-        tag: v4.4.1
+        tag: v4.5.0
   - name: corehunt
     post-install:
       - install -Dp -m 644 org.cubocore.CoreHunt.appdata.xml /app/share/appdata/org.cubocore.CoreHunt.appdata.xml
@@ -42,5 +43,5 @@ modules:
         path: org.cubocore.CoreHunt.appdata.xml
       - type: git
         url: https://gitlab.com/cubocore/coreapps/corehunt.git
-        tag: v4.4.0
+        tag: v4.5.0
 
