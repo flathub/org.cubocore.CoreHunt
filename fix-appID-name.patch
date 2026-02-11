@@ -1,0 +1,33 @@
+--- a/cc.cubocore.CoreHunt.desktop
++++ b/cc.cubocore.CoreHunt.desktop
+@@ -5,4 +5,4 @@
+ Exec=corehunt %F
+-Icon=cc.cubocore.CoreHunt
++Icon=org.cubocore.CoreHunt
+ Type=Application
+ Categories=Qt;Utility;X-CSuite;
+--- a/src/main.cpp
++++ b/src/main.cpp
+@@ -33,6 +33,6 @@
+ #include "corehunt.h"
+ 
+-const QString appID = QStringLiteral(APP_ID);
++const QString appID = QStringLiteral("org.cubocore.CoreHunt");
+ 
+ 
+ int main(int argc, char *argv[])
+--- a/cc.cubocore.CoreHunt.metainfo.xml
++++ b/cc.cubocore.CoreHunt.metainfo.xml
+@@ -4,4 +4,4 @@
+ <component type="desktop-application">
+-    <id>cc.cubocore.CoreHunt</id>
++    <id>org.cubocore.CoreHunt</id>
+ 
+     <metadata_license>CC0-1.0</metadata_license>
+@@ -11,5 +11,5 @@
+     <developer_name>CuboCore Group</developer_name>
+ 
+-    <launchable type="desktop-id">cc.cubocore.CoreHunt.desktop</launchable>
++    <launchable type="desktop-id">org.cubocore.CoreHunt.desktop</launchable>
+ 
+     <name>CoreHunt</name>
