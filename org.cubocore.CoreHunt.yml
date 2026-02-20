@@ -10,7 +10,8 @@ finish-args:
   - --share=ipc
   - --socket=fallback-x11
   - --socket=wayland
-  - --filesystem=home # For searching files across the user filesystem
+  - --filesystem=home # For accessing cubocore global app settings
+  - --filesystem=host:ro # For searching files across the user filesystem
   - --device=dri
   - --talk-name=org.freedesktop.Notifications
 cleanup:
